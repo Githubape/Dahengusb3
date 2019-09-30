@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>testClass</class>
+ <widget class="QMainWindow" name="testClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1598</width>
+    <height>915</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>test</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="openbut">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>620</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开相机</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="endbut">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>620</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>关闭相机</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startcapbut">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>670</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开始捕获</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopcapbut">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>670</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>停止捕获</string>
+    </property>
+   </widget>
+   <widget class="View" name="openGLWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>500</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="tribut">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>620</y>
+      <width>101</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Triggeron</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="trioffbut">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>670</y>
+      <width>111</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Triggeroff</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cabonbut">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>852</x>
+      <y>620</y>
+      <width>101</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Callbackon</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="calshubut">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>852</x>
+      <y>670</y>
+      <width>101</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Callbackoff</string>
+    </property>
+   </widget>
+   <widget class="View" name="openGLWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>0</y>
+      <width>500</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+   </widget>
+   <widget class="View" name="openGLWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>0</y>
+      <width>500</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="port">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>530</y>
+      <width>231</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="chanmaj">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>620</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>换样本</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="chanpos">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>670</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>换位置</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit1">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>620</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>670</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>580</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>580</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>exposure</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>710</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>30</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>710</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>间隔时长</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>750</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>智能储存on</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_4">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>770</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_5">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>620</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>15</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>790</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>智能储存off</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1598</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>View</class>
+   <extends>QOpenGLWidget</extends>
+   <header location="global">view.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="test.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>endbut</sender>
+   <signal>clicked()</signal>
+   <receiver>testClass</receiver>
+   <slot>exit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>671</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>258</x>
+     <y>891</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>startcapbut</sender>
+   <signal>clicked()</signal>
+   <receiver>testClass</receiver>
+   <slot>start()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>726</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>135</x>
+     <y>875</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>stopcapbut</sender>
+   <signal>clicked()</signal>
+   <receiver>testClass</receiver>
+   <slot>pause()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>216</x>
+     <y>722</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>208</x>
+     <y>863</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>openbut</sender>
+   <signal>clicked()</signal>
+   <receiver>testClass</receiver>
+   <slot>initmat()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>676</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>368</x>
+     <y>886</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tribut</sender>
+   <signal>clicked()</signal>
+   <receiver>testClass</receiver>
+   <slot>opTrigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>407</x>
+     <y>673</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>382</x>
+     <y>896</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>trioffbut</sender>
+   <signal>clicked()</signal>
+   <receiver>testClass</receiver>
+   <slot>shTrigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>374</x>
+     <y>734</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>950</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cabonbut</sender>
+   <signal>clicked()</signal>
+   <receiver>testClass</receiver>
+   <slot>Callbackon()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>892</x>
+     <y>668</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>907</x>
+     <y>894</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>calshubut</sender>
+   <signal>clicked()</signal>
+   <receiver>testClass</receiver>
+   <slot>Callbackoff()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>917</x>
+     <y>724</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>918</x>
+     <y>872</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chanmaj</sender>
+   <signal>clicked()</signal>
+   <receiver>testClass</receiver>
+   <slot>chanmaj()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>626</x>
+     <y>679</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>636</x>
+     <y>877</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chanpos</sender>
+   <signal>clicked()</signal>
+   <receiver>testClass</receiver>
+   <slot>chanpos()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>607</x>
+     <y>732</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>582</x>
+     <y>875</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>testClass</receiver>
+   <slot>setexp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>648</x>
+     <y>643</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>657</x>
+     <y>903</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>testClass</receiver>
+   <slot>saveauto()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>600</x>
+     <y>817</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>604</x>
+     <y>948</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>testClass</receiver>
+   <slot>saveautooff()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>609</x>
+     <y>839</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>881</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>start()</slot>
+  <slot>exit()</slot>
+  <slot>pause()</slot>
+  <slot>initmat()</slot>
+  <slot>opTrigger()</slot>
+  <slot>shTrigger()</slot>
+  <slot>Callbackon()</slot>
+  <slot>Callbackoff()</slot>
+  <slot>chanmaj()</slot>
+  <slot>chanpos()</slot>
+  <slot>setexp()</slot>
+  <slot>saveauto()</slot>
+  <slot>saveautooff()</slot>
+ </slots>
+</ui>
